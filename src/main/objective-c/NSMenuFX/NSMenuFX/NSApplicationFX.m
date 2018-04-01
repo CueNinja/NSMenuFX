@@ -75,3 +75,17 @@ void Java_de_codecentric_centerdevice_cocoa_NSApplication_setMainMenu(JNIEnv *en
     NSObjectUtils* menuUtils = [NSObjectUtilsFactory getInstance:JNI_NSMenu];
     [[NSApplicationFX fromJObject:env obj:thisObj] setMainMenu:[menuUtils getId:env obj:menu]];
 }
+
+void Java_de_codecentric_centerdevice_cocoa_NSApplication_setDarkTitle(JNIEnv *env, jobject thisObj) {
+    NSApplication *application = [NSApplicationFX fromJObject:env obj:thisObj];
+    for(NSWindow *window in application.windows) {
+        window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantDark];
+    }
+}
+
+void Java_de_codecentric_centerdevice_cocoa_NSApplication_setLightTitle(JNIEnv *env, jobject thisObj) {
+    NSApplication *application = [NSApplicationFX fromJObject:env obj:thisObj];
+    for(NSWindow *window in application.windows) {
+        window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
+    }
+}

@@ -21,6 +21,7 @@ bin/*
 ## Build generated
 build/
 DerivedData/
+target/
 #
 ### Various settings
 *.pbxuser
@@ -36,4 +37,6 @@ xcuserdata/
 ### Other
 *.moved-aside
 *.xcuserstate
-
+centerdevice-nsmenufx.iml
+.idea/
+src/main/objective-c/NSMenuFX/NSMenuFX.xcodeproj/project.xcworkspace/xcshareddata/*

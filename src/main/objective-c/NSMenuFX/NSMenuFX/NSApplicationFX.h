@@ -42,6 +42,10 @@ extern "C" {
     
     JNIEXPORT void JNICALL Java_de_codecentric_centerdevice_cocoa_NSApplication_setMainMenu(JNIEnv *env, jobject thisObj, jobject menu);
     
+    JNIEXPORT void JNICALL Java_de_codecentric_centerdevice_cocoa_NSApplication_setDarkTitle(JNIEnv *env, jobject thisObj);
+    
+    JNIEXPORT void JNICALL Java_de_codecentric_centerdevice_cocoa_NSApplication_setLightTitle(JNIEnv *env, jobject thisObj);
+    
 #ifdef __cplusplus
 }
 #endif

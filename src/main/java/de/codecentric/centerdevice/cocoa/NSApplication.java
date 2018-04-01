@@ -25,4 +25,8 @@ public class NSApplication extends NSObject {
   public native NSMenu mainMenu();
 
   public native void setMainMenu(NSMenu mainMenu);
+
+  public native void setDarkTitle();
+
+  public native void setLightTitle();
 }
